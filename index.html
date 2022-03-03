@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/utils.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Typing Game</title>
+</head>
+<body class="body-dark">
+    <!-- Start Nav -->
+    <nav class="flex column p-2">
+        <h1>Typing Game</h1>
+        <!-- Theme toggle -->
+        <button class="theme-toggle p-1">
+            <i id="theme-toggle-icon" class="fa-solid fa-sun fa-2x"></i>
+        </button>   
+    </nav>
+    <!-- End Nav -->
+    <main class="main-container center p-1">
+        <!-- Game container -->
+        <div class="game-container glass shadow p-2">
+            <!-- Greeting -->
+            <div class="greeting">
+                <h1>Test your accuracy</h1>
+                <p>Click start to begin. Type the quote as quickly and as error free as you can. The more errors, the lower the score.</p>
+            </div>
+            <!-- The primary components - Quote, input, start button -->
+            <div class="game center p-2 m-1">
+                <!-- Quote -->
+                <div class="quote-container p-1 border-black">
+                    <h2 class="quote">The quote will appear here</h2>
+                    <span class="speaker"></span>
+                </div>
+                <!-- Input -->
+                <div class="controls p-2">
+                    <input class="user-input" type="text" />
+                    <button class="start-btn shadow p-1 m-1">Start</button>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <div class="success-modal shadow hidden">
+        <div class="modal-top">
+            <h2>High scores</h2>
+            <div class="congrats"></div>
+        </div>
+        <div class="modal-body">
+            <table class="high-scores">
+                <thead>
+                    <tr>
+                        <th>Player #</th>
+                        <th>Time</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody class="high-scores-body">
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>Master Chef</td>
+                        <td>69420</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button class="modal-button restart"><i class="fas fa-redo-alt fa-2x"></i></button>
+            <button class="modal-button close"><i class="far fa-times-circle fa-2x"></i></button>
+        </div>
+    </div>
+
+       <!-- Template for scores. Populate this template and place it into a task list -->
+       <template id="score-template">
+        <tr class="score-row">
+            <td class="rank"></td>
+            <td class="time"></td>
+            <td class="score"></td>
+        </tr>
+    </template>
+    <!-- End template -->
+    <!-- JS -->
+<script type="module" src="data.js"></script>    
+<script type="module" src="index.js"></script>
+</body>
+</html>

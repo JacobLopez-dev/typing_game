@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Inter', sans-serif;
+    background: rgb(122,175,254);
+    background: linear-gradient(183deg, rgba(122,175,254,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+nav{
+    height: 10vh;
+    width: 100%;
+}
+
+nav > h1{
+    color: white;
+}
+
+.theme-toggle{
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.main-container{
+    height: 75%;
+    
+    
+}
+
+.game-container{
+    height: fit-content;
+}
+
+.quote-container{
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.quote{
+    width: 100%;
+    text-align: center;
+}
+
+.controls{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.start-btn{
+    width: fit-content;
+    align-self: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.start-btn:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition: all .3s;
+  }
+
+
+  .success-modal{
+    background-color: rgb(145, 145, 145);
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 30%;
+    height: fit-content;
+    width: 40%;
+    padding: 10px;
+    border-radius: 25px; 
+    z-index: 100;
+    display: flex;
+    flex-direction:column; 
+}
+
+.modal-top{
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+    background: rgb(122,175,254);
+    padding: 1%;
+    
+}
+
+.modal-body{
+    border-top: 2px solid blue;
+    height: 100%;
+    background-color: #eee;
+    border-radius: 0 0 10px 10px;
+}
+
+.high-scores{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.high-scores thead th{
+    padding: 10px;
+}
+
+.high-scores td{
+    border-top: 1px solid black;
+    padding: 0.5rem;
+}
+
+.high-scores table:last-child{
+    border: none;
+}
+
+.modal-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-button{
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    background: transparent;
+    transition: transform 1s;
+}
+
+
+.close:hover{
+    color: #FF355E;
+    transform: rotate(180deg);
+}
+
+.restart:hover{
+    color: #66FF66;
+    transform: rotate(360deg);
+}
+
+
+.hidden{
+    display: none;
+}
+
+.show{
+    animation-duration: 1.5s;
+    animation-name: slidein;
+}
+
+.blur-filter {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+
+@keyframes slidein{
+    from{
+        margin-left: 100%;
+    }
+
+    to{
+        margin-left: 0%;
+        
+    }
+}

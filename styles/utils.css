@@ -1,0 +1,102 @@
+.border-black{
+    border: 2px solid black;
+}
+
+.border-red{
+    border: 2px solid red;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center{
+    display: grid;
+    place-items: center;
+}
+
+.p-1{
+    padding: .5em;
+}
+
+.p-2{
+    padding: 1em;
+}
+
+.p-3{
+    padding: 1.5em;
+}
+
+.m-1{
+    margin: 1em;
+}
+
+.m-2{
+    margin: 2em;
+}
+
+.m-3{
+    margin: 2.5em
+}
+
+.glass{
+    background: rgba( 255, 255, 255, 0.4 );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );  
+}
+
+.body-dark{
+    /* background: rgb(122,175,254); */
+    background: linear-gradient(184deg, rgba(122,175,254,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.theme-button-dark{
+    color: black;
+    background-color: white;
+    box-shadow: 0px -12px 127px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: 0px -12px 127px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 0px -12px 127px 0px rgba(0,0,0,1);
+}
+
+.shadow{
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+}
+
+.highlight{
+    background-color: rgb(122,175,254);
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
+
+.error{
+    background-color: lightcoral;
+}
+
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+
+    body{
+        height: 100vh;
+    }
+
+    .game-container{
+        height:fit-content;
+    }
+
+    .game{
+        height: 80%;
+    }
+    .main-container{
+        height: 80%;
+    }
+} 
