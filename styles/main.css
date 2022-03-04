@@ -176,3 +176,26 @@ input{
         
     }
 }
+
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+
+    body{
+        height: 100vh;
+    }
+
+    .game-container{
+        height:fit-content;
+    }
+
+    .game{
+        height: 80%;
+    }
+    .main-container{
+        height: 80%;
+    }
+
+    .success-modal{
+        width: 100%;
+        left: 0;
+    }
+} 

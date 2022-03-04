@@ -82,21 +82,3 @@
 .error{
     background-color: lightcoral;
 }
-
-@media screen and (max-device-width: 480px) and (orientation:portrait) {
-
-    body{
-        height: 100vh;
-    }
-
-    .game-container{
-        height:fit-content;
-    }
-
-    .game{
-        height: 80%;
-    }
-    .main-container{
-        height: 80%;
-    }
-} 
