@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A typing game to test your speed an accuracy">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/utils.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,7 +15,7 @@
     <nav class="flex column p-2">
         <h1>Typing Game</h1>
         <!-- Theme toggle -->
-        <button class="theme-toggle p-1">
+        <button class="theme-toggle p-1" aria-label="Theme toggle">
             <i id="theme-toggle-icon" class="fa-solid fa-sun fa-2x"></i>
         </button>   
     </nav>
@@ -36,7 +37,8 @@
                 </div>
                 <!-- Input -->
                 <div class="controls p-2">
-                    <input class="user-input" type="text" />
+                    <label for="quoteInput" class="screen-reader-text">Input quote here</label>
+                    <input class="user-input" type="text" id="quoteInput" />
                     <button class="start-btn shadow p-1 m-1">Start</button>
                 </div>
             </div>
